@@ -1,7 +1,7 @@
 import re
 
 def clean_text(text):
-    # Normalize whitespace and remove unwanted characters
+   
     text = re.sub(r'\s+', ' ', text)  # Replace multiple whitespaces with single space
     text = re.sub(r'[^\w\s]', '', text)  # Remove punctuation
     text = text.strip()  # Remove leading and trailing whitespace
